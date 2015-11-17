@@ -1,0 +1,1 @@
+create index IX_B178765A on CUD_UserData (companyId, userId);

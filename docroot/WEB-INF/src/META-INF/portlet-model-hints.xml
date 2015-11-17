@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.prodyna.model.UserData">
+		<field name="userDataId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="creationDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="t_ShirtSize" type="String" />
+		<field name="dob" type="Date" />
+		<field name="glasses" type="boolean" />
+		<field name="coffeesPerDay" type="int" />
+		<field name="heightCm" type="int" />
+	</model>
+</model-hints>

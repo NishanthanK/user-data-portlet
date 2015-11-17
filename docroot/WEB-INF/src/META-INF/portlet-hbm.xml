@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.prodyna.model.UserData" />
+	<class name="com.prodyna.model.impl.UserDataImpl" table="CUD_UserData">
+		<cache usage="read-write" />
+		<id name="userDataId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="creationDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="t_ShirtSize" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="dateOfBirth" type="org.hibernate.type.TimestampType" />
+		<property name="glasses" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="coffeesPerDay" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="heightCm" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+	</class>
+</hibernate-mapping>
